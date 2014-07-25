@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mk.myandroid.layout.LayoutActivity" 
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/layout_btn_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="霓虹灯效果" />
+    
+    <Button
+        android:id="@+id/layout_btn_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="线性布局-四个角和中间各一个按钮" />
+
+</LinearLayout>
