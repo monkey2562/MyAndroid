@@ -33,7 +33,7 @@ public class NeonlightActivity extends Activity implements Runnable{
 		}
 		
 		
-		handler.postDelayed(this, 2000);//300毫秒循环一次
+		handler.postDelayed(this, 500);//300毫秒循环一次
 	}
 	
 	@Override

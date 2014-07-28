@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mk.myandroid.layout.PanelActivity" >
+	<!-- 顶部 -->
+    <RelativeLayout
+        android:id="@+id/relativelayout_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FF0000"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        >
+        <TextView 
+            android:id="@+id/tv_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="顶部标题"
+            android:textColor="#FFFF00"
+            />
+	</RelativeLayout>
+	
+    <!-- 底部 -->
+    <RelativeLayout
+        android:id="@+id/relativelayout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#00FFFF"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView 
+            android:id="@+id/tv_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="底部标题"
+            android:textColor="#0000FF"
+            />
+	</RelativeLayout>
+	
+    
+    <!-- 中部 -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/relativelayout_bottom"
+        android:layout_below="@+id/relativelayout_top"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout
+            android:id="@+id/relativelayout_middleleft"
+            android:layout_width="200dp"
+        	android:layout_height="match_parent"
+        	android:background="#FF00FF"
+        	android:gravity="center"
+            >
+            <TextView 
+                android:id="@+id/tv_middleleft"
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="左侧标题"
+        		android:textColor="#FFFFFF"
+                />
+        </RelativeLayout>
+        
+        <LinearLayout
+            android:id="@+id/relativelayout_middleright"
+            android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:background="#eeccee"
+        	android:gravity="center"
+        	android:orientation="vertical"
+            >
+            <TextView 
+                android:id="@+id/tv_middleright"
+                android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="右侧标题"
+        		android:textColor="#000066"
+                />
+        </LinearLayout>
+        
+    </LinearLayout>
+</RelativeLayout>

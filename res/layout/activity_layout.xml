@@ -20,5 +20,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="线性布局-四个角和中间各一个按钮" />
+    
+    <Button
+        android:id="@+id/layout_btn_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="实现panel效果" />
 
 </LinearLayout>

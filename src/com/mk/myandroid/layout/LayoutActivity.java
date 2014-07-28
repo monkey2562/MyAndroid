@@ -14,16 +14,20 @@ import com.mk.myandroid.R;
 public class LayoutActivity extends Activity implements OnClickListener{
 	Button neonLightButton;
 	Button LinearButton;
+	Button panelButton;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_layout);
-		
+		//霓虹灯
 		neonLightButton = (Button) findViewById(R.id.layout_btn_01);
 		neonLightButton.setOnClickListener(this);
+		//线性布局
 		LinearButton = (Button) findViewById(R.id.layout_btn_02);
 		LinearButton.setOnClickListener(this);
-		
+		//PanelLayout 实现panel效果。LinearLayout和RelativeLayout结合
+		panelButton = (Button) findViewById(R.id.layout_btn_03);
+		panelButton.setOnClickListener(this);
 		
 	}
 
@@ -38,6 +42,11 @@ public class LayoutActivity extends Activity implements OnClickListener{
 			Intent linearIntent = new Intent(LayoutActivity.this,LinearActivity.class);
 			startActivity(linearIntent);
 			break;
+		case R.id.layout_btn_03:
+			Intent panelIntent = new Intent(LayoutActivity.this,PanelActivity.class);
+			startActivity(panelIntent);
+			break;
+			
 		default:
 			break;
 		}
