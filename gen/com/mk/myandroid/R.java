@@ -26,7 +26,12 @@ public final class R {
         public static final int ic_launcher=0x7f020001;
     }
     public static final class id {
-        public static final int action_settings=0x7f080014;
+        public static final int action_settings=0x7f080019;
+        public static final int btnBindService=0x7f080015;
+        public static final int btnGetCurrentNum=0x7f080017;
+        public static final int btnStartService=0x7f080013;
+        public static final int btnStopService=0x7f080014;
+        public static final int btnUnbindService=0x7f080016;
         public static final int button1=0x7f080001;
         public static final int layout_btn_01=0x7f080002;
         public static final int layout_btn_02=0x7f080003;
@@ -42,7 +47,7 @@ public final class R {
         public static final int relativelayout_middleright=0x7f080011;
         public static final int relativelayout_top=0x7f08000b;
         public static final int textView1=0x7f080000;
-        public static final int tv001=0x7f080013;
+        public static final int tv001=0x7f080018;
         public static final int tv_bottom=0x7f08000e;
         public static final int tv_middleleft=0x7f080010;
         public static final int tv_middleright=0x7f080012;
@@ -56,7 +61,8 @@ public final class R {
         public static final int activity_main=0x7f030004;
         public static final int activity_neonlight=0x7f030005;
         public static final int activity_panel=0x7f030006;
-        public static final int main_item=0x7f030007;
+        public static final int activity_service=0x7f030007;
+        public static final int main_item=0x7f030008;
     }
     public static final class menu {
         public static final int datatransmission=0x7f070000;
@@ -77,6 +83,7 @@ public final class R {
         public static final int title_activity_linear=0x7f050005;
         public static final int title_activity_neonlight=0x7f050004;
         public static final int title_activity_panel=0x7f050006;
+        public static final int title_activity_service=0x7f050009;
     }
     public static final class style {
         /** 

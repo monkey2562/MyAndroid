@@ -5,6 +5,7 @@ import java.util.HashMap;
 
 import com.mk.myandroid.layout.LayoutActivity;
 import com.mk.myandroid.lifetime.LifetimeActivity;
+import com.mk.myandroid.service.ServiceActivity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -21,7 +22,7 @@ import android.widget.SimpleAdapter;
 public class MainActivity extends Activity {
 	ListView listView;
 	SimpleAdapter adapter;
-	private static final String[] NAMES = new String[] {"生命周期", "布局", "文本框", "输入框","事件"};
+	private static final String[] NAMES = new String[] {"四大组件之activity", "四大组件之service","布局", "文本框", "输入框","事件"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,12 +53,16 @@ public class MainActivity extends Activity {
 					long arg3) {
 //				setTitle("点击第"+arg2+"个项目");
 				switch (arg2) {
-				case 0:
+				case 0://四大组件之activity
 					Intent lifetimeIntent = new Intent(MainActivity.this, LifetimeActivity.class);
 					startActivity(lifetimeIntent);
 					
 					break;
-				case 1:
+				case 1://四大组件之service
+					Intent serviceIntent = new Intent(MainActivity.this, ServiceActivity.class);
+					startActivity(serviceIntent);
+					break;
+				case 2:
 					Intent layoutIntent = new Intent(MainActivity.this, LayoutActivity.class);
 					startActivity(layoutIntent);
 					break;

@@ -10,5 +10,6 @@
     <string name="title_activity_panel">Panel布局效果</string>
     <string name="title_activity_lifetime">生命周期</string>
     <string name="title_activity_datatransmission">DatatransmissionActivity</string>
+    <string name="title_activity_service">ServiceActivity</string>
 
 </resources>

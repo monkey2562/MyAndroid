@@ -29,7 +29,6 @@ public class LifetimeActivity extends Activity {
 				Intent intent = new Intent(LifetimeActivity.this, DatatransmissionActivity.class);
 				intent.putExtra("data", "hello world of warcraft");
 				
-				
 				startActivityForResult(intent, 0);
 			}
 		});
@@ -42,7 +41,6 @@ public class LifetimeActivity extends Activity {
 
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-		// TODO Auto-generated method stub
 		super.onActivityResult(requestCode, resultCode, data);
 		
 		

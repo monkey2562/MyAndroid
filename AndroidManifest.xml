@@ -43,9 +43,14 @@
             android:label="@string/title_activity_lifetime" >
         </activity>
         <activity
-            android:name="com.mk.myandroid.lifetime.DatatransmissionActivity"
+            android:name=".lifetime.DatatransmissionActivity"
             android:label="@string/title_activity_datatransmission" >
         </activity>
+        <activity
+            android:name="com.mk.myandroid.service.ServiceActivity"
+            android:label="@string/title_activity_service" >
+        </activity>
+        <service android:name=".service.EchoService"></service>
     </application>
 
 </manifest>
