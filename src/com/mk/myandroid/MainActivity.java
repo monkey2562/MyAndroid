@@ -3,11 +3,16 @@ package com.mk.myandroid;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import com.mk.myandroid.broadcastreceiver.BroadcastreceiverActivity;
+import com.mk.myandroid.contentprovider.ContentproviderActivity;
+import com.mk.myandroid.intent.IntentActivity;
 import com.mk.myandroid.layout.LayoutActivity;
 import com.mk.myandroid.lifetime.LifetimeActivity;
+import com.mk.myandroid.listview.ListviewActivity;
 import com.mk.myandroid.service.ServiceActivity;
 
 import android.app.Activity;
+import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -22,7 +27,8 @@ import android.widget.SimpleAdapter;
 public class MainActivity extends Activity {
 	ListView listView;
 	SimpleAdapter adapter;
-	private static final String[] NAMES = new String[] {"四大组件之activity", "四大组件之service","布局", "文本框", "输入框","事件"};
+	private static final String[] NAMES = new String[] {"四大组件之activity", "四大组件之service",
+		"四大组件之Broadcast Receiver","四大组件之ContentProvider","Intent","布局", "ListView", "输入框","事件"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,11 +68,26 @@ public class MainActivity extends Activity {
 					Intent serviceIntent = new Intent(MainActivity.this, ServiceActivity.class);
 					startActivity(serviceIntent);
 					break;
-				case 2:
+				case 2://四大组件之Broadcast Receiver
+					Intent broadcastReceiverIntent = new Intent(MainActivity.this, BroadcastreceiverActivity.class);
+					startActivity(broadcastReceiverIntent);
+					break;
+				case 3://四大组件之ContentProvider
+					Intent contentIntent = new Intent(MainActivity.this, ContentproviderActivity.class);
+					startActivity(contentIntent);
+					break;
+				case 4://Intent用组件启动 --显式intent
+					Intent egIntent = new Intent();
+					egIntent.setComponent(new ComponentName("com.mk.myandroid", "com.mk.myandroid.intent.IntentActivity"));
+					startActivity(egIntent);
+					break;
+				case 5://布局
 					Intent layoutIntent = new Intent(MainActivity.this, LayoutActivity.class);
 					startActivity(layoutIntent);
 					break;
-				default:
+				case 6://ListView
+					Intent listViewIntent = new Intent(MainActivity.this, ListviewActivity.class);
+					startActivity(listViewIntent);
 					break;
 				}
 				
