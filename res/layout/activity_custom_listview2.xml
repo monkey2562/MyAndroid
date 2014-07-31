@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mk.myandroid.listview.CustomListviewActivity" >
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+        <TextView 
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:text="listView的ID必须为@android:id/list"
+            />
+	<Button 
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="按钮"/>
+</LinearLayout>

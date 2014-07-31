@@ -3,12 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.mk.myandroid.listview.ListviewActivity" >
+    tools:context="com.mk.myandroid.ui.spinner.UsingSpinnerActivity" >
 
-    <ListView
-        android:id="@+id/listview"
+    <Spinner
+        android:id="@+id/spinner1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-         />
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

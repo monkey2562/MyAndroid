@@ -58,7 +58,7 @@
 
         <!--
         <receiver android:name=".broadcastreceiver.MyBC" >
-        </receiver>
+        </receiver>
         -->
 
         <activity
@@ -96,8 +96,56 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.mk.myandroid.listview.ListviewActivity"
+            android:name=".listview.ListviewActivity"
             android:label="@string/title_activity_listview" >
+        </activity>
+        <activity
+            android:name=".listview.ListcellActivity"
+            android:label="@string/title_activity_listcell" >
+        </activity>
+        <activity
+            android:name=".listview.CustomListviewActivity"
+            android:label="@string/title_activity_custom_listview" >
+        </activity>
+        <activity
+            android:name=".listview.CustomListView2Activity"
+            android:label="@string/title_activity_custom_listview" >
+        </activity>
+        <activity
+            android:name=".ui.UiListActivity"
+            android:label="@string/title_activity_ui_list" >
+        </activity>
+        <activity
+            android:name=".ui.radiogroup.UsingRadioGroupActivity"
+            android:label="@string/title_activity_using_radio_group" >
+        </activity>
+        <activity
+            android:name=".ui.checkbox.UsingCheckBoxActivity"
+            android:label="@string/title_activity_using_check_box" >
+        </activity>
+        <activity
+            android:name=".ui.datepicker.UsingDatePickerActivity"
+            android:label="@string/title_activity_using_date_picker" >
+        </activity>
+        <activity
+            android:name=".ui.timepicker.UsingTimePickerActivity"
+            android:label="@string/title_activity_using_time_picker" >
+        </activity>
+        <activity
+            android:name=".ui.spinner.UsingSpinnerActivity"
+            android:label="@string/title_activity_using_spinner" >
+        </activity>
+        <activity
+            android:name=".ui.progressbar.UsingProgressBarActivity"
+            android:label="@string/title_activity_using_progress_bar" >
+        </activity>
+        <activity
+            android:name=".ui.autocomplete.UsingAutoCompleteActivity"
+            android:label="@string/title_activity_using_auto_complete" >
+        </activity>
+        <activity
+            android:name="com.mk.myandroid.ui.seekbar.UsingSeekBarActivity"
+            android:label="@string/title_activity_using_seek_bar" >
         </activity>
     </application>
 

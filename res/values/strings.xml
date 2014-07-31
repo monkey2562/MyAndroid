@@ -17,5 +17,16 @@
     <string name="title_activity_action">ActionActivity</string>
     <string name="title_activity_imageviewer">ImageviewerActivity</string>
     <string name="title_activity_listview">ListviewActivity</string>
+    <string name="title_activity_listcell">ListcellActivity</string>
+    <string name="title_activity_custom_listview">CustomListviewActivity</string>
+    <string name="title_activity_ui_list">常用控件</string>
+    <string name="title_activity_using_radio_group">UsingRadioGroupActivity</string>
+    <string name="title_activity_using_check_box">UsingCheckBoxActivity</string>
+    <string name="title_activity_using_date_picker">UsingDatePickerActivity</string>
+    <string name="title_activity_using_time_picker">UsingTimePickerActivity</string>
+    <string name="title_activity_using_spinner">UsingSpinnerActivity</string>
+    <string name="title_activity_using_progress_bar">UsingProgressBarActivity</string>
+    <string name="title_activity_using_auto_complete">UsingAutoCompleteActivity</string>
+    <string name="title_activity_using_seek_bar">UsingSeekBarActivity</string>
 
 </resources>

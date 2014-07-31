@@ -6,7 +6,7 @@
     tools:context="com.mk.myandroid.listview.ListviewActivity" >
 
     <ListView
-        android:id="@+id/listview"
+        android:id="@+id/listview02"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
          />

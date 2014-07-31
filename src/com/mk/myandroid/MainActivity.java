@@ -3,14 +3,6 @@ package com.mk.myandroid;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import com.mk.myandroid.broadcastreceiver.BroadcastreceiverActivity;
-import com.mk.myandroid.contentprovider.ContentproviderActivity;
-import com.mk.myandroid.intent.IntentActivity;
-import com.mk.myandroid.layout.LayoutActivity;
-import com.mk.myandroid.lifetime.LifetimeActivity;
-import com.mk.myandroid.listview.ListviewActivity;
-import com.mk.myandroid.service.ServiceActivity;
-
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Intent;
@@ -23,12 +15,20 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
+import com.mk.myandroid.broadcastreceiver.BroadcastreceiverActivity;
+import com.mk.myandroid.contentprovider.ContentproviderActivity;
+import com.mk.myandroid.layout.LayoutActivity;
+import com.mk.myandroid.lifetime.LifetimeActivity;
+import com.mk.myandroid.listview.ListviewActivity;
+import com.mk.myandroid.service.ServiceActivity;
+import com.mk.myandroid.ui.UiListActivity;
+
 
 public class MainActivity extends Activity {
 	ListView listView;
 	SimpleAdapter adapter;
 	private static final String[] NAMES = new String[] {"四大组件之activity", "四大组件之service",
-		"四大组件之Broadcast Receiver","四大组件之ContentProvider","Intent","布局", "ListView", "输入框","事件"};
+		"四大组件之Broadcast Receiver","四大组件之ContentProvider","Intent","布局", "ListView", "常用控件","事件"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +40,7 @@ public class MainActivity extends Activity {
         for(int i = 0 ;i < NAMES.length;i++){
         	HashMap<String, Object> map = new HashMap<String, Object>();
         	map.put("ItemName", NAMES[i]);
+        	map.put("Image", R.drawable.app_icon);
         	listItem.add(map);
         	
         }
@@ -47,8 +48,8 @@ public class MainActivity extends Activity {
         //生成适配器的Item和动态数组对应的元素
         adapter = new SimpleAdapter(this, listItem, //数据源
         		R.layout.main_item, //listItem的XML实现
-        		new String[] {"ItemName"},//动态数组与item对应的子项 
-        		new int[] {R.id.tv001}  );//Item的XML文件里面对应的ID
+        		new String[] {"ItemName","Image"},//动态数组与item对应的子项 
+        		new int[] {R.id.tv001,R.id.iv001}  );//Item的XML文件里面对应的ID
         //添加并显示
         listView.setAdapter(adapter);
         //添加点击
@@ -88,6 +89,10 @@ public class MainActivity extends Activity {
 				case 6://ListView
 					Intent listViewIntent = new Intent(MainActivity.this, ListviewActivity.class);
 					startActivity(listViewIntent);
+					break;
+				case 7://常用控件
+					Intent uiIntent = new Intent(MainActivity.this, UiListActivity.class);
+					startActivity(uiIntent);
 					break;
 				}
 				
