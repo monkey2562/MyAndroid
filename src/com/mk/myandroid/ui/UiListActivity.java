@@ -11,10 +11,19 @@ import android.widget.ListView;
 
 import com.mk.myandroid.R;
 import com.mk.myandroid.ui.autocomplete.UsingAutoCompleteActivity;
+import com.mk.myandroid.ui.baseadapter.UsingBaseAdapterActivity;
 import com.mk.myandroid.ui.checkbox.UsingCheckBoxActivity;
 import com.mk.myandroid.ui.datepicker.UsingDatePickerActivity;
+import com.mk.myandroid.ui.edittext.UsingEditTextActivity;
+import com.mk.myandroid.ui.gallery.UsingGalleryActivity;
+import com.mk.myandroid.ui.gridview.UsingGridViewActivity;
+import com.mk.myandroid.ui.imageswitcher.UsingImageSwitcherActivity;
+import com.mk.myandroid.ui.notification.UsingNotificationActivity;
 import com.mk.myandroid.ui.progressbar.UsingProgressBarActivity;
+import com.mk.myandroid.ui.progressdialog.UsingProgressDialogActivity;
 import com.mk.myandroid.ui.radiogroup.UsingRadioGroupActivity;
+import com.mk.myandroid.ui.ratingbar.UsingRatingBarActivity;
+import com.mk.myandroid.ui.scrollview.UsingScrollViewActivity;
 import com.mk.myandroid.ui.seekbar.UsingSeekBarActivity;
 import com.mk.myandroid.ui.spinner.UsingSpinnerActivity;
 import com.mk.myandroid.ui.timepicker.UsingTimePickerActivity;
@@ -35,6 +44,15 @@ public class UiListActivity extends ListActivity {
 		adapter.add(new ListCellData(this, "ProgressBar",new Intent(this,UsingProgressBarActivity.class)));
 		adapter.add(new ListCellData(this, "AutoComplete",new Intent(this,UsingAutoCompleteActivity.class)));
 		adapter.add(new ListCellData(this, "SeekBar",new Intent(this,UsingSeekBarActivity.class)));
+		adapter.add(new ListCellData(this, "GridView",new Intent(this,UsingGridViewActivity.class)));
+		adapter.add(new ListCellData(this, "ProgressDialog",new Intent(this,UsingProgressDialogActivity.class)));
+		adapter.add(new ListCellData(this, "Notification",new Intent(this,UsingNotificationActivity.class)));
+		adapter.add(new ListCellData(this, "ScrollView",new Intent(this,UsingScrollViewActivity.class)));
+		adapter.add(new ListCellData(this, "RatingBar",new Intent(this,UsingRatingBarActivity.class)));
+		adapter.add(new ListCellData(this, "ImageSwitcher",new Intent(this,UsingImageSwitcherActivity.class)));
+		adapter.add(new ListCellData(this, "Gallery",new Intent(this,UsingGalleryActivity.class)));
+		adapter.add(new ListCellData(this, "EditText",new Intent(this,UsingEditTextActivity.class)));
+		adapter.add(new ListCellData(this, "BaseAdapter",new Intent(this,UsingBaseAdapterActivity.class)));
 		
 	}
 	

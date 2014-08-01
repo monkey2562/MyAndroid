@@ -58,7 +58,7 @@
 
         <!--
         <receiver android:name=".broadcastreceiver.MyBC" >
-        </receiver>
+        </receiver>
         -->
 
         <activity
@@ -144,8 +144,44 @@
             android:label="@string/title_activity_using_auto_complete" >
         </activity>
         <activity
-            android:name="com.mk.myandroid.ui.seekbar.UsingSeekBarActivity"
+            android:name=".ui.seekbar.UsingSeekBarActivity"
             android:label="@string/title_activity_using_seek_bar" >
+        </activity>
+        <activity
+            android:name=".ui.gridview.UsingGridViewActivity"
+            android:label="@string/title_activity_using_grid_view" >
+        </activity>
+        <activity
+            android:name=".ui.progressdialog.UsingProgressDialogActivity"
+            android:label="@string/title_activity_using_progress_dialog" >
+        </activity>
+        <activity
+            android:name=".ui.notification.UsingNotificationActivity"
+            android:label="@string/title_activity_using_notification" >
+        </activity>
+        <activity
+            android:name=".ui.scrollview.UsingScrollViewActivity"
+            android:label="@string/title_activity_using_scroll_view" >
+        </activity>
+        <activity
+            android:name=".ui.ratingbar.UsingRatingBarActivity"
+            android:label="@string/title_activity_using_rating_bar" >
+        </activity>
+        <activity
+            android:name=".ui.imageswitcher.UsingImageSwitcherActivity"
+            android:label="@string/title_activity_image_switcher" >
+        </activity>
+        <activity
+            android:name=".ui.gallery.UsingGalleryActivity"
+            android:label="@string/title_activity_using_gallery" >
+        </activity>
+        <activity
+            android:name=".ui.edittext.UsingEditTextActivity"
+            android:label="@string/title_activity_using_edit_text" >
+        </activity>
+        <activity
+            android:name="com.mk.myandroid.ui.baseadapter.UsingBaseAdapterActivity"
+            android:label="@string/title_activity_using_base_adapter" >
         </activity>
     </application>
 

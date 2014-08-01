@@ -28,5 +28,14 @@
     <string name="title_activity_using_progress_bar">UsingProgressBarActivity</string>
     <string name="title_activity_using_auto_complete">UsingAutoCompleteActivity</string>
     <string name="title_activity_using_seek_bar">UsingSeekBarActivity</string>
+    <string name="title_activity_using_grid_view">UsingGridViewActivity</string>
+    <string name="title_activity_using_progress_dialog">UsingProgressDialogActivity</string>
+    <string name="title_activity_using_notification">UsingNotificationActivity</string>
+    <string name="title_activity_using_scroll_view">UsingScrollViewActivity</string>
+    <string name="title_activity_using_rating_bar">UsingRatingBarActivity</string>
+    <string name="title_activity_image_switcher">ImageSwitcherActivity</string>
+    <string name="title_activity_using_gallery">UsingGalleryActivity</string>
+    <string name="title_activity_using_edit_text">UsingEditTextActivity</string>
+    <string name="title_activity_using_base_adapter">UsingBaseAdapterActivity</string>
 
 </resources>
