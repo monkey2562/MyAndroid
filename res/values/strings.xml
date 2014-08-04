@@ -37,5 +37,9 @@
     <string name="title_activity_using_gallery">UsingGalleryActivity</string>
     <string name="title_activity_using_edit_text">UsingEditTextActivity</string>
     <string name="title_activity_using_base_adapter">UsingBaseAdapterActivity</string>
+    <string name="title_activity_back_button">BackButtonActivity</string>
+    <string name="title_activity_project">ProjectActivity</string>
+    <string name="title_activity_calculator">CalculatorActivity</string>
+    <string name="title_activity_custom_control">CustomControlActivity</string>
 
 </resources>

@@ -14,12 +14,16 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
 
+import com.mk.myandroid.backbutton.BackButtonActivity;
 import com.mk.myandroid.broadcastreceiver.BroadcastreceiverActivity;
 import com.mk.myandroid.contentprovider.ContentproviderActivity;
+import com.mk.myandroid.customcontrol.CustomControlActivity;
 import com.mk.myandroid.layout.LayoutActivity;
 import com.mk.myandroid.lifetime.LifetimeActivity;
 import com.mk.myandroid.listview.ListviewActivity;
+import com.mk.myandroid.project.ProjectActivity;
 import com.mk.myandroid.service.ServiceActivity;
 import com.mk.myandroid.ui.UiListActivity;
 
@@ -28,7 +32,8 @@ public class MainActivity extends Activity {
 	ListView listView;
 	SimpleAdapter adapter;
 	private static final String[] NAMES = new String[] {"四大组件之activity", "四大组件之service",
-		"四大组件之Broadcast Receiver","四大组件之ContentProvider","Intent","布局", "ListView", "常用控件","事件"};
+		"四大组件之Broadcast Receiver","四大组件之ContentProvider","Intent","布局", "ListView", 
+		"常用控件","后退事件","项目","定制控件"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -93,6 +98,18 @@ public class MainActivity extends Activity {
 				case 7://常用控件
 					Intent uiIntent = new Intent(MainActivity.this, UiListActivity.class);
 					startActivity(uiIntent);
+					break;
+				case 8://后退事件
+					Intent backIntent = new Intent(MainActivity.this, BackButtonActivity.class);
+					startActivity(backIntent);
+					break;
+				case 9://项目
+					Intent projectIntent = new Intent(MainActivity.this, ProjectActivity.class);
+					startActivity(projectIntent);
+					break;
+				case 10://定制控件
+					Intent ccIntent = new Intent(MainActivity.this, CustomControlActivity.class);
+					startActivity(ccIntent);
 					break;
 				}
 				

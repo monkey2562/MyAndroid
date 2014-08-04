@@ -58,7 +58,7 @@
 
         <!--
         <receiver android:name=".broadcastreceiver.MyBC" >
-        </receiver>
+        </receiver>
         -->
 
         <activity
@@ -180,8 +180,24 @@
             android:label="@string/title_activity_using_edit_text" >
         </activity>
         <activity
-            android:name="com.mk.myandroid.ui.baseadapter.UsingBaseAdapterActivity"
+            android:name=".ui.baseadapter.UsingBaseAdapterActivity"
             android:label="@string/title_activity_using_base_adapter" >
+        </activity>
+        <activity
+            android:name=".backbutton.BackButtonActivity"
+            android:label="@string/title_activity_back_button" >
+        </activity>
+        <activity
+            android:name=".project.ProjectActivity"
+            android:label="@string/title_activity_project" >
+        </activity>
+        <activity
+            android:name=".project.calculator.CalculatorActivity"
+            android:label="@string/title_activity_calculator" >
+        </activity>
+        <activity
+            android:name="com.mk.myandroid.customcontrol.CustomControlActivity"
+            android:label="@string/title_activity_custom_control" >
         </activity>
     </application>
 

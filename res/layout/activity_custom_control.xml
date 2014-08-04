@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mk.myandroid.customcontrol.CustomControlActivity" >
+
+    <com.mk.myandroid.customcontrol.LabelEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        labelText="姓名:"
+        labelFontSize="16" 
+        labelPosition="left"/>
+    <com.mk.myandroid.customcontrol.LabelEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        labelText="性别:"
+        labelFontSize="20" 
+        labelPosition="top"/>
+    
+
+</LinearLayout>
