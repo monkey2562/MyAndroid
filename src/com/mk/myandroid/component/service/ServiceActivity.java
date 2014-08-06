@@ -1,4 +1,4 @@
-package com.mk.myandroid.service;
+package com.mk.myandroid.component.service;
 
 import android.app.Activity;
 import android.content.ComponentName;

@@ -41,11 +41,11 @@
             android:label="@string/title_activity_panel" >
         </activity>
         <activity
-            android:name=".lifetime.LifetimeActivity"
+            android:name=".component.activity.LifetimeActivity"
             android:label="@string/title_activity_lifetime" >
         </activity>
         <activity
-            android:name=".lifetime.DatatransmissionActivity"
+            android:name=".component.activity.DatatransmissionActivity"
             android:label="@string/title_activity_datatransmission" >
         </activity>
         <activity
@@ -55,11 +55,6 @@
 
         <service android:name=".service.EchoService" >
         </service>
-
-        <!--
-        <receiver android:name=".broadcastreceiver.MyBC" >
-        </receiver>
-        -->
 
         <activity
             android:name=".broadcastreceiver.BroadcastreceiverActivity"
@@ -196,8 +191,37 @@
             android:label="@string/title_activity_calculator" >
         </activity>
         <activity
-            android:name="com.mk.myandroid.customcontrol.CustomControlActivity"
+            android:name=".customcontrol.CustomControlActivity"
             android:label="@string/title_activity_custom_control" >
+        </activity>
+        <activity
+            android:name=".component.ComponentActivity"
+            android:label="@string/title_activity_component" >
+        </activity>
+        <activity
+            android:name=".resourceaccess.ResourceAccessActivity"
+            android:label="@string/title_activity_resource_access" >
+        </activity>
+        <activity
+            android:name=".resourceaccess.string.ResourceStringActivity"
+            android:label="@string/title_activity_resource_string" >
+        </activity>
+        <activity
+            android:name=".resourceaccess.color.ResourceColorActivity"
+            android:label="@string/title_activity_resource_color" >
+        </activity>
+        <activity
+            android:name=".resourceaccess.array.ResourceArrayActivity"
+            android:label="@string/title_activity_resource_array" >
+        </activity>
+        <activity
+            android:name=".resourceaccess.drawable.ResourceDrawableActivity"
+            android:label="@string/title_activity_resource_drawable" >
+        </activity>
+        <activity
+            android:theme="@android:style/Theme.Black"
+            android:name="com.mk.myandroid.resourceaccess.styletheme.ResourceStyleThemeActivity"
+            android:label="@string/title_activity_resource_style_theme" >
         </activity>
     </application>
 

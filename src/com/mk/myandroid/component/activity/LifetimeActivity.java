@@ -1,4 +1,4 @@
-package com.mk.myandroid.lifetime;
+package com.mk.myandroid.component.activity;
 
 import android.app.Activity;
 import android.content.Intent;

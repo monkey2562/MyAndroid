@@ -1,37 +1,29 @@
-package com.mk.myandroid.contentprovider;
+package com.mk.myandroid.resourceaccess.array;
 
 import android.app.Activity;
-import android.database.Cursor;
 import android.os.Bundle;
-import android.provider.ContactsContract;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import com.mk.myandroid.R;
 
-public class ContentproviderActivity extends Activity {
-
+public class ResourceArrayActivity extends Activity {
+	TextView textView;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_contentprovider);
-		
-		
-		Cursor cursor = getContentResolver().query(ContactsContract.Contacts.CONTENT_URI, null, null, null, null);
-		
-		while (cursor.moveToNext()) {
-			String name = cursor.getString(cursor.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
-			Log.v("ContentproviderActivity", ">>>>" + name);
-			
-			
+		setContentView(R.layout.activity_resource_array);
+		String[] arr = getResources().getStringArray(R.array.arrs);
+		for (String str : arr) {
+			System.out.println(str);
 		}
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.contentprovider, menu);
+		getMenuInflater().inflate(R.menu.resource_array, menu);
 		return true;
 	}
 

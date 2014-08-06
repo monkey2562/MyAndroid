@@ -1,4 +1,4 @@
-package com.mk.myandroid.service;
+package com.mk.myandroid.component.service;
 
 import java.util.Timer;
 import java.util.TimerTask;

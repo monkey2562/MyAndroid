@@ -41,5 +41,13 @@
     <string name="title_activity_project">ProjectActivity</string>
     <string name="title_activity_calculator">CalculatorActivity</string>
     <string name="title_activity_custom_control">CustomControlActivity</string>
+    <string name="title_activity_component">ComponentActivity</string>
+    <string name="title_activity_resource_access">ResourceAccessActivity</string>
+    <string name="title_activity_string">StringActivity</string>
+    <string name="title_activity_resource_string">ResourceStringActivity</string>
+    <string name="title_activity_resource_color">ResourceColorActivity</string>
+    <string name="title_activity_resource_array">ResourceArrayActivity</string>
+    <string name="title_activity_resource_drawable">ResourceDrawableActivity</string>
+    <string name="title_activity_resource_style_theme">ResourceStyleThemeActivity</string>
 
 </resources>

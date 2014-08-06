@@ -14,26 +14,22 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
-import android.widget.TextView;
 
 import com.mk.myandroid.backbutton.BackButtonActivity;
-import com.mk.myandroid.broadcastreceiver.BroadcastreceiverActivity;
-import com.mk.myandroid.contentprovider.ContentproviderActivity;
+import com.mk.myandroid.component.ComponentActivity;
 import com.mk.myandroid.customcontrol.CustomControlActivity;
 import com.mk.myandroid.layout.LayoutActivity;
-import com.mk.myandroid.lifetime.LifetimeActivity;
 import com.mk.myandroid.listview.ListviewActivity;
 import com.mk.myandroid.project.ProjectActivity;
-import com.mk.myandroid.service.ServiceActivity;
+import com.mk.myandroid.resourceaccess.ResourceAccessActivity;
 import com.mk.myandroid.ui.UiListActivity;
 
 
 public class MainActivity extends Activity {
 	ListView listView;
 	SimpleAdapter adapter;
-	private static final String[] NAMES = new String[] {"四大组件之activity", "四大组件之service",
-		"四大组件之Broadcast Receiver","四大组件之ContentProvider","Intent","布局", "ListView", 
-		"常用控件","后退事件","项目","定制控件"};
+	private static final String[] NAMES = new String[] {"四大组件", "Intent","布局", "ListView", 
+		"常用控件","后退事件","项目","定制控件","资源访问"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,51 +61,42 @@ public class MainActivity extends Activity {
 					long arg3) {
 //				setTitle("点击第"+arg2+"个项目");
 				switch (arg2) {
-				case 0://四大组件之activity
-					Intent lifetimeIntent = new Intent(MainActivity.this, LifetimeActivity.class);
-					startActivity(lifetimeIntent);
-					
+				case 0://四大组件
+					Intent componentIntent = new Intent(MainActivity.this, ComponentActivity.class);
+					startActivity(componentIntent);
 					break;
-				case 1://四大组件之service
-					Intent serviceIntent = new Intent(MainActivity.this, ServiceActivity.class);
-					startActivity(serviceIntent);
-					break;
-				case 2://四大组件之Broadcast Receiver
-					Intent broadcastReceiverIntent = new Intent(MainActivity.this, BroadcastreceiverActivity.class);
-					startActivity(broadcastReceiverIntent);
-					break;
-				case 3://四大组件之ContentProvider
-					Intent contentIntent = new Intent(MainActivity.this, ContentproviderActivity.class);
-					startActivity(contentIntent);
-					break;
-				case 4://Intent用组件启动 --显式intent
+				case 1://Intent用组件启动 --显式intent
 					Intent egIntent = new Intent();
 					egIntent.setComponent(new ComponentName("com.mk.myandroid", "com.mk.myandroid.intent.IntentActivity"));
 					startActivity(egIntent);
 					break;
-				case 5://布局
+				case 2://布局
 					Intent layoutIntent = new Intent(MainActivity.this, LayoutActivity.class);
 					startActivity(layoutIntent);
 					break;
-				case 6://ListView
+				case 3://ListView
 					Intent listViewIntent = new Intent(MainActivity.this, ListviewActivity.class);
 					startActivity(listViewIntent);
 					break;
-				case 7://常用控件
+				case 4://常用控件
 					Intent uiIntent = new Intent(MainActivity.this, UiListActivity.class);
 					startActivity(uiIntent);
 					break;
-				case 8://后退事件
+				case 5://后退事件
 					Intent backIntent = new Intent(MainActivity.this, BackButtonActivity.class);
 					startActivity(backIntent);
 					break;
-				case 9://项目
+				case 6://项目
 					Intent projectIntent = new Intent(MainActivity.this, ProjectActivity.class);
 					startActivity(projectIntent);
 					break;
-				case 10://定制控件
+				case 7://定制控件
 					Intent ccIntent = new Intent(MainActivity.this, CustomControlActivity.class);
 					startActivity(ccIntent);
+					break;
+				case 8://资源访问
+					Intent resIntent = new Intent(MainActivity.this, ResourceAccessActivity.class);
+					startActivity(resIntent);
 					break;
 				}
 				

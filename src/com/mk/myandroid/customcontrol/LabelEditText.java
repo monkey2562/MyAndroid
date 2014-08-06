@@ -1,6 +1,8 @@
 package com.mk.myandroid.customcontrol;
 
 
+import java.net.ContentHandler;
+
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
@@ -71,6 +73,7 @@ public class LabelEditText extends LinearLayout {
 			textView.setText(labelText);
 		} else if (labelPosition.equals("top")) {
 			ll = new LinearLayout(context);
+			ll.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT));
 			TextView tv = new TextView(context);
 			tv.setTextSize(labelFontSize);
 			tv.setText(labelText);

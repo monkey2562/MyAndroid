@@ -1,4 +1,4 @@
-package com.mk.myandroid.broadcastreceiver;
+package com.mk.myandroid.component.broadcastreceiver;
 
 import android.app.Activity;
 import android.content.Intent;

@@ -1,4 +1,4 @@
-package com.mk.myandroid.lifetime;
+package com.mk.myandroid.component.activity;
 
 import com.mk.myandroid.R;
 import com.mk.myandroid.R.id;

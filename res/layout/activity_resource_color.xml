@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mk.myandroid.resourceaccess.color.ResourceColorActivity" >
+
+    <View android:background="@color/red"  android:layout_width="@dimen/dp10" android:layout_height="50dp"/>
+    <View android:background="@color/green" android:layout_width="20dp" android:layout_height="50dp"/>
+    <View android:background="@color/blue" android:layout_width="30dp" android:layout_height="50dp"/>
+    <View android:background="@android:color/holo_purple" android:layout_width="40dp" android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dp: sp: pt: mm:毫米 in:英寸 px:像素   如果每英寸160个像素密度dp=px，组件宽高用dp，sp缩放的比例像素，主要描述文字，描述文字大小用pt，"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</LinearLayout>

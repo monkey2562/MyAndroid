@@ -1,4 +1,4 @@
-package com.mk.myandroid.broadcastreceiver;
+package com.mk.myandroid.component.broadcastreceiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
