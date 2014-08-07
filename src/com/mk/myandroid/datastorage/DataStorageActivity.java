@@ -1,4 +1,4 @@
-package com.mk.myandroid.project;
+package com.mk.myandroid.datastorage;
 
 import android.app.ListActivity;
 import android.content.Intent;
@@ -10,23 +10,28 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.mk.myandroid.R;
-import com.mk.myandroid.project.calculator.CalculatorActivity;
-import com.mk.myandroid.project.filebrowser.FileBrowserActivity;
+import com.mk.myandroid.datastorage.externalstorage.ExternalStorageActivity;
+import com.mk.myandroid.datastorage.internalstorage.InternalStorageActivity;
+import com.mk.myandroid.datastorage.sharedpreferences.UseSharedPreferencesActivity;
+import com.mk.myandroid.datastorage.sqlite.UseSqliteActivity;
 import com.mk.myandroid.ui.ListCellData;
 
-public class ProjectActivity extends ListActivity {
+public class DataStorageActivity extends ListActivity {
 	private ArrayAdapter<ListCellData> adapter;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_project);
 		
 		adapter = new ArrayAdapter<ListCellData>(this, android.R.layout.simple_list_item_1);
 		setListAdapter(adapter);
-		adapter.add(new ListCellData(this, "Calculator",new Intent(this,CalculatorActivity.class)));
-		adapter.add(new ListCellData(this, "FileBrowser",new Intent(this,FileBrowserActivity.class)));
+		adapter.add(new ListCellData(this, "数据存储之SharedPreferences", new Intent(this,UseSharedPreferencesActivity.class)));
+		adapter.add(new ListCellData(this, "数据存储之内部存储", new Intent(this,InternalStorageActivity.class)));
+		adapter.add(new ListCellData(this, "数据存储之外部存储", new Intent(this,ExternalStorageActivity.class)));
+		adapter.add(new ListCellData(this, "数据存储之Sqlite", new Intent(this,UseSqliteActivity.class)));
+		
 	}
 
+	
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
 		ListCellData data = adapter.getItem(position);
@@ -37,7 +42,7 @@ public class ProjectActivity extends ListActivity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.project, menu);
+		getMenuInflater().inflate(R.menu.data_storage, menu);
 		return true;
 	}
 

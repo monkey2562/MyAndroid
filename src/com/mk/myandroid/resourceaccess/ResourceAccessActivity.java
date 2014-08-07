@@ -11,10 +11,13 @@ import android.widget.ListView;
 
 import com.mk.myandroid.R;
 import com.mk.myandroid.resourceaccess.array.ResourceArrayActivity;
+import com.mk.myandroid.resourceaccess.assets.ResourceAssetsActivity;
 import com.mk.myandroid.resourceaccess.color.ResourceColorActivity;
 import com.mk.myandroid.resourceaccess.drawable.ResourceDrawableActivity;
+import com.mk.myandroid.resourceaccess.menu.ResourceMenuActivity;
 import com.mk.myandroid.resourceaccess.string.ResourceStringActivity;
 import com.mk.myandroid.resourceaccess.styletheme.ResourceStyleThemeActivity;
+import com.mk.myandroid.resourceaccess.xml.ResourceXMLActivity;
 import com.mk.myandroid.ui.ListCellData;
 
 public class ResourceAccessActivity extends ListActivity {
@@ -29,6 +32,9 @@ public class ResourceAccessActivity extends ListActivity {
 		adapter.add(new ListCellData(this, "资源访问之数组资源",new Intent(this,ResourceArrayActivity.class)));
 		adapter.add(new ListCellData(this, "资源访问之图片资源",new Intent(this,ResourceDrawableActivity.class)));
 		adapter.add(new ListCellData(this, "资源访问之样式和主题资源",new Intent(this,ResourceStyleThemeActivity.class)));
+		adapter.add(new ListCellData(this, "资源访问之菜单资源",new Intent(this,ResourceMenuActivity.class)));
+		adapter.add(new ListCellData(this, "资源访问之XML原始数据资源",new Intent(this,ResourceXMLActivity.class)));
+		adapter.add(new ListCellData(this, "资源访问之assets资源",new Intent(this,ResourceAssetsActivity.class)));
 		
 	}
 

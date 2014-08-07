@@ -49,5 +49,14 @@
     <string name="title_activity_resource_array">ResourceArrayActivity</string>
     <string name="title_activity_resource_drawable">ResourceDrawableActivity</string>
     <string name="title_activity_resource_style_theme">ResourceStyleThemeActivity</string>
+    <string name="title_activity_resource_menu">ResourceMenuActivity</string>
+    <string name="title_activity_resource_xml">ResourceXMLActivity</string>
+    <string name="title_activity_resource_assets">ResourceAssetsActivity</string>
+    <string name="title_activity_data_storage">DataStorageActivity</string>
+    <string name="title_activity_use_shared_preferences">UseSharedPreferencesActivity</string>
+    <string name="title_activity_internal_storage">InternalStorageActivity</string>
+    <string name="title_activity_external_storage">ExternalStorageActivity</string>
+    <string name="title_activity_file_browser">FileBrowserActivity</string>
+    <string name="title_activity_use_sqlite">UseSqliteActivity</string>
 
 </resources>

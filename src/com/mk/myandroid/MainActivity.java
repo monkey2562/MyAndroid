@@ -18,6 +18,7 @@ import android.widget.SimpleAdapter;
 import com.mk.myandroid.backbutton.BackButtonActivity;
 import com.mk.myandroid.component.ComponentActivity;
 import com.mk.myandroid.customcontrol.CustomControlActivity;
+import com.mk.myandroid.datastorage.DataStorageActivity;
 import com.mk.myandroid.layout.LayoutActivity;
 import com.mk.myandroid.listview.ListviewActivity;
 import com.mk.myandroid.project.ProjectActivity;
@@ -29,7 +30,7 @@ public class MainActivity extends Activity {
 	ListView listView;
 	SimpleAdapter adapter;
 	private static final String[] NAMES = new String[] {"四大组件", "Intent","布局", "ListView", 
-		"常用控件","后退事件","项目","定制控件","资源访问"};
+		"常用控件","后退事件","项目","定制控件","资源访问","数据存储"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -97,6 +98,10 @@ public class MainActivity extends Activity {
 				case 8://资源访问
 					Intent resIntent = new Intent(MainActivity.this, ResourceAccessActivity.class);
 					startActivity(resIntent);
+					break;
+				case 9://数据存储
+					Intent dataStorageIntent = new Intent(MainActivity.this, DataStorageActivity.class);
+					startActivity(dataStorageIntent);
 					break;
 				}
 				

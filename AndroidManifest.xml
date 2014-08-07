@@ -9,6 +9,7 @@
         android:targetSdkVersion="21" />
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -219,9 +220,45 @@
             android:label="@string/title_activity_resource_drawable" >
         </activity>
         <activity
-            android:theme="@android:style/Theme.Black"
-            android:name="com.mk.myandroid.resourceaccess.styletheme.ResourceStyleThemeActivity"
-            android:label="@string/title_activity_resource_style_theme" >
+            android:name=".resourceaccess.styletheme.ResourceStyleThemeActivity"
+            android:label="@string/title_activity_resource_style_theme"
+            android:theme="@android:style/Theme.Black" >
+        </activity>
+        <activity
+            android:name=".resourceaccess.menu.ResourceMenuActivity"
+            android:label="@string/title_activity_resource_menu" >
+        </activity>
+        <activity
+            android:name=".resourceaccess.xml.ResourceXMLActivity"
+            android:label="@string/title_activity_resource_xml" >
+        </activity>
+        <activity
+            android:name=".resourceaccess.assets.ResourceAssetsActivity"
+            android:label="@string/title_activity_resource_assets" >
+        </activity>
+        <activity
+            android:name=".datastorage.DataStorageActivity"
+            android:label="@string/title_activity_data_storage" >
+        </activity>
+        <activity
+            android:name=".datastorage.sharedpreferences.UseSharedPreferencesActivity"
+            android:label="@string/title_activity_use_shared_preferences" >
+        </activity>
+        <activity
+            android:name=".datastorage.internalstorage.InternalStorageActivity"
+            android:label="@string/title_activity_internal_storage" >
+        </activity>
+        <activity
+            android:name=".datastorage.externalstorage.ExternalStorageActivity"
+            android:label="@string/title_activity_external_storage" >
+        </activity>
+        <activity
+            android:name=".project.filebrowser.FileBrowserActivity"
+            android:label="@string/title_activity_file_browser" >
+        </activity>
+        <activity
+            android:name="com.mk.myandroid.datastorage.sqlite.UseSqliteActivity"
+            android:label="@string/title_activity_use_sqlite" >
         </activity>
     </application>
 
