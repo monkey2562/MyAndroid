@@ -21,6 +21,7 @@ import com.mk.myandroid.customcontrol.CustomControlActivity;
 import com.mk.myandroid.datastorage.DataStorageActivity;
 import com.mk.myandroid.layout.LayoutActivity;
 import com.mk.myandroid.listview.ListviewActivity;
+import com.mk.myandroid.media.MediaActivity;
 import com.mk.myandroid.project.ProjectActivity;
 import com.mk.myandroid.resourceaccess.ResourceAccessActivity;
 import com.mk.myandroid.ui.UiListActivity;
@@ -30,7 +31,7 @@ public class MainActivity extends Activity {
 	ListView listView;
 	SimpleAdapter adapter;
 	private static final String[] NAMES = new String[] {"四大组件", "Intent","布局", "ListView", 
-		"常用控件","后退事件","项目","定制控件","资源访问","数据存储"};
+		"常用控件","后退事件","项目","定制控件","资源访问","数据存储","多媒体"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -102,6 +103,10 @@ public class MainActivity extends Activity {
 				case 9://数据存储
 					Intent dataStorageIntent = new Intent(MainActivity.this, DataStorageActivity.class);
 					startActivity(dataStorageIntent);
+					break;
+				case 10://多媒体
+					Intent mediaIntent = new Intent(MainActivity.this, MediaActivity.class);
+					startActivity(mediaIntent);
 					break;
 				}
 				

@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mk.myandroid.media.sound.PlaySoundActivity" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SoundPool主要播放游戏里面的音效，比较短，不能播放歌曲" />
+    <Button 
+        android:id="@+id/btnPlaySound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PlaySound"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MediaPlay主要播放歌曲" />
+    <Button 
+        android:id="@+id/btnPlaySong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PlaySong"/>
+
+</LinearLayout>

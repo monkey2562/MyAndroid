@@ -1,4 +1,4 @@
-package com.mk.myandroid.datastorage;
+package com.mk.myandroid.media;
 
 import android.app.ListActivity;
 import android.content.Intent;
@@ -10,29 +10,21 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.mk.myandroid.R;
-import com.mk.myandroid.datastorage.contentprovider.UseContentProviderActivity;
-import com.mk.myandroid.datastorage.externalstorage.ExternalStorageActivity;
-import com.mk.myandroid.datastorage.internalstorage.InternalStorageActivity;
 import com.mk.myandroid.datastorage.sharedpreferences.UseSharedPreferencesActivity;
-import com.mk.myandroid.datastorage.sqlite.UseSqliteActivity;
+import com.mk.myandroid.media.sound.PlaySoundActivity;
 import com.mk.myandroid.ui.ListCellData;
 
-public class DataStorageActivity extends ListActivity {
+public class MediaActivity extends ListActivity {
 	private ArrayAdapter<ListCellData> adapter;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
+		setContentView(R.layout.activity_media);
 		adapter = new ArrayAdapter<ListCellData>(this, android.R.layout.simple_list_item_1);
 		setListAdapter(adapter);
-		adapter.add(new ListCellData(this, "数据存储之SharedPreferences", new Intent(this,UseSharedPreferencesActivity.class)));
-		adapter.add(new ListCellData(this, "数据存储之内部存储", new Intent(this,InternalStorageActivity.class)));
-		adapter.add(new ListCellData(this, "数据存储之外部存储", new Intent(this,ExternalStorageActivity.class)));
-		adapter.add(new ListCellData(this, "数据存储之Sqlite", new Intent(this,UseSqliteActivity.class)));
-		adapter.add(new ListCellData(this, "数据存储之ContentProvider", new Intent(this,UseContentProviderActivity.class)));
+		adapter.add(new ListCellData(this, "多媒体之SoundPoll播放声音", new Intent(this,PlaySoundActivity.class)));
 		
 	}
-
 	
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
@@ -44,7 +36,7 @@ public class DataStorageActivity extends ListActivity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.data_storage, menu);
+		getMenuInflater().inflate(R.menu.media, menu);
 		return true;
 	}
 

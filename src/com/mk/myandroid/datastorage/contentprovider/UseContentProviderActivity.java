@@ -1,4 +1,4 @@
-package com.mk.myandroid.datastorage.sqlite;
+package com.mk.myandroid.datastorage.contentprovider;
 
 import android.app.AlertDialog;
 import android.app.ListActivity;
@@ -18,8 +18,9 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.mk.myandroid.R;
+import com.mk.myandroid.datastorage.sqlite.Db;
 
-public class UseSqliteActivity extends ListActivity {
+public class UseContentProviderActivity extends ListActivity {
 	private SimpleCursorAdapter adapter;
 	private EditText etName,etSex;
 	private Button btnAdd;
@@ -32,7 +33,8 @@ public class UseSqliteActivity extends ListActivity {
 			ContentValues cv = new ContentValues();
 			cv.put("name", etName.getText().toString());
 			cv.put("sex", etSex.getText().toString());
-			dbWrite.insert("user", null, cv);
+//			dbWrite.insert("user", null, cv);
+			getContentResolver().insert(UsersCP.URI, cv);
 			refreshListView();
 		}
 	};
@@ -41,7 +43,7 @@ public class UseSqliteActivity extends ListActivity {
 		@Override
 		public boolean onItemLongClick(AdapterView<?> parent, View view,
 				final int position, long id) {
-			new AlertDialog.Builder(UseSqliteActivity.this).setTitle("提醒").setMessage("确定要删除吗？").setNegativeButton("取消", null).setPositiveButton("确定", new DialogInterface.OnClickListener() {
+			new AlertDialog.Builder(UseContentProviderActivity.this).setTitle("提醒").setMessage("确定要删除吗？").setNegativeButton("取消", null).setPositiveButton("确定", new DialogInterface.OnClickListener() {
 				
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
@@ -107,16 +109,15 @@ public class UseSqliteActivity extends ListActivity {
 	}
 	
 	private void refreshListView(){
-		Cursor cursor = dbRead.query("user", null, null, null, null, null, null);
-		adapter.changeCursor(cursor);
+//		Cursor cursor = dbRead.query("user", null, null, null, null, null, null);
+//		adapter.changeCursor(cursor);
+		adapter.changeCursor(getContentResolver().query(UsersCP.URI, null, null, null, null));
 	}
-	
-	
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.use_sqlite, menu);
+		getMenuInflater().inflate(R.menu.use_content, menu);
 		return true;
 	}
 

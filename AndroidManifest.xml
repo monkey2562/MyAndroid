@@ -257,8 +257,26 @@
             android:label="@string/title_activity_file_browser" >
         </activity>
         <activity
-            android:name="com.mk.myandroid.datastorage.sqlite.UseSqliteActivity"
+            android:name=".datastorage.sqlite.UseSqliteActivity"
             android:label="@string/title_activity_use_sqlite" >
+        </activity>
+        <activity
+            android:name=".datastorage.contentprovider.UseContentProviderActivity"
+            android:label="@string/title_activity_use_content_provider" >
+        </activity>
+
+        <provider
+            android:name=".datastorage.contentprovider.UsersCP"
+            android:authorities="com.mk.myandroid.usercp" >
+        </provider>
+
+        <activity
+            android:name=".media.MediaActivity"
+            android:label="@string/title_activity_media" >
+        </activity>
+        <activity
+            android:name="com.mk.myandroid.media.sound.PlaySoundActivity"
+            android:label="@string/title_activity_play_sound" >
         </activity>
     </application>
 

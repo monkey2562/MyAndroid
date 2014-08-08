@@ -58,5 +58,8 @@
     <string name="title_activity_external_storage">ExternalStorageActivity</string>
     <string name="title_activity_file_browser">FileBrowserActivity</string>
     <string name="title_activity_use_sqlite">UseSqliteActivity</string>
+    <string name="title_activity_use_content_provider">UseContentProviderActivity</string>
+    <string name="title_activity_media">MediaActivity</string>
+    <string name="title_activity_play_sound">PlaySoundActivity</string>
 
 </resources>
