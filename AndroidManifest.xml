@@ -10,6 +10,9 @@
 
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
 
     <application
         android:allowBackup="true"
@@ -275,8 +278,42 @@
             android:label="@string/title_activity_media" >
         </activity>
         <activity
-            android:name="com.mk.myandroid.media.sound.PlaySoundActivity"
+            android:name=".media.sound.PlaySoundActivity"
             android:label="@string/title_activity_play_sound" >
+        </activity>
+        <activity
+            android:name=".media.video.PlayVideoActivity"
+            android:label="@string/title_activity_play_video" >
+        </activity>
+        <activity
+            android:name=".media.video.SurfaceViewPlayerActivity"
+            android:label="@string/title_activity_play_video"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".media.video.VideoViewPlayerActivity"
+            android:label="@string/title_activity_video_view_player"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".media.camera.CameraActivity"
+            android:label="@string/title_activity_camera"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+        </activity>
+        <activity
+            android:name=".media.camera.ImagePreviewActivity"
+            android:label="@string/title_activity_image_preview" >
+        </activity>
+        <activity
+            android:name=".media.camera.UsingSystemCameraActivity"
+            android:label="@string/title_activity_using_system_camera" >
+        </activity>
+        <activity
+            android:name="com.mk.myandroid.media.record.RecordActivity"
+            android:label="@string/title_activity_record" >
         </activity>
     </application>
 

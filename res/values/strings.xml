@@ -61,5 +61,11 @@
     <string name="title_activity_use_content_provider">UseContentProviderActivity</string>
     <string name="title_activity_media">MediaActivity</string>
     <string name="title_activity_play_sound">PlaySoundActivity</string>
+    <string name="title_activity_play_video">PlayVideoActivity</string>
+    <string name="title_activity_video_view_player">VideoViewPlayerActivity</string>
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="title_activity_image_preview">ImagePreviewActivity</string>
+    <string name="title_activity_using_system_camera">UsingSystemCameraActivity</string>
+    <string name="title_activity_record">RecordActivity</string>
 
 </resources>

@@ -10,8 +10,11 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.mk.myandroid.R;
-import com.mk.myandroid.datastorage.sharedpreferences.UseSharedPreferencesActivity;
+import com.mk.myandroid.media.camera.CameraActivity;
+import com.mk.myandroid.media.camera.UsingSystemCameraActivity;
+import com.mk.myandroid.media.record.RecordActivity;
 import com.mk.myandroid.media.sound.PlaySoundActivity;
+import com.mk.myandroid.media.video.PlayVideoActivity;
 import com.mk.myandroid.ui.ListCellData;
 
 public class MediaActivity extends ListActivity {
@@ -22,7 +25,11 @@ public class MediaActivity extends ListActivity {
 		setContentView(R.layout.activity_media);
 		adapter = new ArrayAdapter<ListCellData>(this, android.R.layout.simple_list_item_1);
 		setListAdapter(adapter);
-		adapter.add(new ListCellData(this, "多媒体之SoundPoll播放声音", new Intent(this,PlaySoundActivity.class)));
+		adapter.add(new ListCellData(this, "SoundPoll和MediaPlay播放声音", new Intent(this,PlaySoundActivity.class)));
+		adapter.add(new ListCellData(this, "SurfaceView和VideoView播放视频", new Intent(this,PlayVideoActivity.class)));
+		adapter.add(new ListCellData(this, "camera照相机", new Intent(this,CameraActivity.class)));
+		adapter.add(new ListCellData(this, "调用系统照相机", new Intent(this,UsingSystemCameraActivity.class)));
+		adapter.add(new ListCellData(this, "MediaRecord录音", new Intent(this,RecordActivity.class)));
 		
 	}
 	
