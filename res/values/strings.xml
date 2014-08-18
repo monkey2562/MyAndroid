@@ -67,5 +67,6 @@
     <string name="title_activity_image_preview">ImagePreviewActivity</string>
     <string name="title_activity_using_system_camera">UsingSystemCameraActivity</string>
     <string name="title_activity_record">RecordActivity</string>
+    <string name="title_activity_zxing">ZXingActivity</string>
 
 </resources>

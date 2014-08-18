@@ -15,6 +15,7 @@ import com.mk.myandroid.media.camera.UsingSystemCameraActivity;
 import com.mk.myandroid.media.record.RecordActivity;
 import com.mk.myandroid.media.sound.PlaySoundActivity;
 import com.mk.myandroid.media.video.PlayVideoActivity;
+import com.mk.myandroid.media.zxing.ZXingActivity;
 import com.mk.myandroid.ui.ListCellData;
 
 public class MediaActivity extends ListActivity {
@@ -30,6 +31,7 @@ public class MediaActivity extends ListActivity {
 		adapter.add(new ListCellData(this, "camera照相机", new Intent(this,CameraActivity.class)));
 		adapter.add(new ListCellData(this, "调用系统照相机", new Intent(this,UsingSystemCameraActivity.class)));
 		adapter.add(new ListCellData(this, "MediaRecord录音", new Intent(this,RecordActivity.class)));
+		adapter.add(new ListCellData(this, "ZXing二维码一维码扫描", new Intent(this,ZXingActivity.class)));
 		
 	}
 	

@@ -12,7 +12,8 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
     <application
         android:allowBackup="true"
@@ -312,8 +313,20 @@
             android:label="@string/title_activity_using_system_camera" >
         </activity>
         <activity
-            android:name="com.mk.myandroid.media.record.RecordActivity"
+            android:name=".media.record.RecordActivity"
             android:label="@string/title_activity_record" >
+        </activity>
+        <activity
+            android:name="com.mk.myandroid.media.zxing.ZXingActivity"
+            android:label="@string/title_activity_zxing" >
+        </activity>
+        
+        <activity
+            android:configChanges="orientation|keyboardHidden"
+            android:name="com.zxing.activity.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
         </activity>
     </application>
 
